@@ -25,7 +25,7 @@ def generate_launch_description():
                     package='gpsd_client',
                     plugin='gpsd_client::GPSDClientComponent',
                     name='gpsd_client',
-                    parameters=[gpsd_client_params]
+                    parameters=[gpsd_client_params],
                     remappings=[('/fix','garmin/fix')]
                     ),
                 ComposableNode(
